@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 Route::get('/add-job', function () {
     return view('add-job');
-})->middleware('auth')->name('add-job');
+})->middleware('promoter')->name('add-job');
 
 Auth::routes();
 
