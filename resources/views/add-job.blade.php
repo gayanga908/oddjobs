@@ -37,6 +37,7 @@
                     <option value="Colombo">Colombo</option>
                     <option value="Kalutara">Kalutara</option>
                     <option value="Gampaha">Gampaha</option>
+                    <option value="Matara">Matara</option>
                 </select>
             </div>
             <div class="form-group">
