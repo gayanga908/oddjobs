@@ -14,10 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/add-job', function () {
-    return view('add-job');
-})->middleware('promoter')->name('add-job');
+//Route::get('/add-job', 'JobsController@index')->middleware('promoter')->name('add-job');
 
 Auth::routes();
-
+Route::resource('jobs', 'JobsController');
 Route::get('/home', 'HomeController@index')->name('home');

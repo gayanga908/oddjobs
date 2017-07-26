@@ -16,7 +16,7 @@ class PromoterAuth
     public function handle($request, Closure $next)
     {
         if (Auth::guest()){
-            return redirect('/');
+            return redirect('login');
         } elseif ((Auth::user()->user_role) == "promoter"){
             return $next($request);
         }
